@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="magicpay" class="com.spring.Payment" scope="singleton" autowire="byName">
+		<!-- DI -->
+		<constructor-arg index="0" value="ccard"></constructor-arg>
+		<constructor-arg index="1" value="ecom"></constructor-arg>
+		<property name="message" value="Hi from Spring"/>
+	</bean>
+
+	<bean id="payStatus" class="com.spring.PaymentStatus" scope="singleton">
+		<property name="status" value="Pending..."/>
+		<property name="names">
+			<list>
+				<value>Test1</value>
+				<value>Test2</value>
+				<value>Test2</value>
+				<ref bean="ptype"/>
+			</list>
+			
+		</property>
+	</bean>
+	
+	<bean id="ptype" class="com.spring.PaymentType" >
+		<property name="type"><value>MOBILE_INITIATED</value></property>
+	</bean>
+	
+	<!-- <property name="payStatus" ref="pstatus"/> -->
+	
+</beans>
