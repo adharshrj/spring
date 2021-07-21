@@ -7,26 +7,34 @@ public class ChildApp1 {
 //	public ChildApp1() {
 //		// TODO Auto-generated constructor stub
 //	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-      System.out.println(DigestUtils.sha256Hex("1234578"));
-      
-      String s1 = "Hello";
-      String s2 = "I am Adharsh";
-      String s3 = "";
-      String s4 = "Maven";
-      
-      System.out.println(s1.isEmpty());     
-      System.out.println(s2.isEmpty()); 
-      System.out.println(s3.isEmpty());      
-      System.out.println(s4.isEmpty()); 
-      System.out.println(s1.toLowerCase());
-      System.out.println(s1.concat(s2));
-      System.out.println(s1.replace('H','G'));
-      System.out.println(s1.equalsIgnoreCase(s2)); 
-      
-
+	
+	public static boolean ca1(String s1, String s2) {
+		return s1.equalsIgnoreCase(s2);
+		
 	}
+	public static String ca1b(String s1,String s2) {
+		return s1.concat(s2);
+	}
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//      System.out.println(DigestUtils.sha256Hex("1234578"));
+//      
+//      String s1 = "Hello";
+//      String s2 = "I am Adharsh";
+//      String s3 = "";
+//      String s4 = "Maven";
+//      
+//    
+//      System.out.println(s1.isEmpty());     
+//      System.out.println(s2.isEmpty()); 
+//      System.out.println(s3.isEmpty());      
+//      System.out.println(s4.isEmpty()); 
+//      System.out.println(s1.toLowerCase());
+//      System.out.println(s1.concat(s2));
+//      System.out.println(s1.replace('H','G'));
+//      System.out.println(s1.equalsIgnoreCase(s2)); 
+//      
+//
+//	}
 
 }

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.webapp</groupId>
   <artifactId>parentapp</artifactId>
-  <packaging>pom</packaging>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>parentapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -32,7 +32,6 @@
   <modules>
   	<module>ChildProj1</module>
   	<module>ChildProj2</module>
-  	<module>webmodule</module>
   </modules>
   
   <properties>
