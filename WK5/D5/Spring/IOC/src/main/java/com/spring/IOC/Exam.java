@@ -15,11 +15,11 @@ public class Exam {
    
  private String eName;
    
-   public String getEname() {
+   public String geteName() {
 	   return eName;
    }
    
-   public void setEname(String eName) {
+   public void seteName(String eName) {
 	   this.eName = eName;
    }
    
