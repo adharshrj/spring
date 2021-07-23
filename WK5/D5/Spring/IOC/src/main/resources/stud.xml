@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+	<bean id="stud1" class="com.spring.IOC.Student">
+	<property name="rno" value="001"/>
+	<property name="sName" value="Vijay"/>
+	</bean>
+	
+	<bean id="stud2" class="com.spring.IOC.Student">
+	<property name="rno" value="002"/>
+	<property name="sName" value="Ajith"/>
+	</bean>
+
+</beans>
