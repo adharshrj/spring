@@ -1,5 +1,4 @@
-# srmb2spring
- Spring Apps
+# Spring Apps
 
 ## Week 5
 *Maven*<br>
