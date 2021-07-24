@@ -2,13 +2,13 @@
 **srmb2spring**
 
 ## Week 5
-*Maven*<br>
+**Maven**<br>
 Maven Projects can be found at WK5/D1/parentapp (original location srmb2corejava/WK5/D1/parentapp)
 1) Parent Child
 2) String & Date (ChildProj1 is String, ChildProj2 is date)
 3) Web module with document.getElementById functions 
 
-*Spring Core*<br>
+**Spring Core**<br>
 Spring Core projects can be found at WK5/D5/Spring
 1) IOC at WK5/D5/Spring/IOC
 2) DI at WK5/D5/Spring/DI
@@ -17,7 +17,7 @@ Spring Core projects can be found at WK5/D5/Spring
 5) Autowire at WK5/D5/Spring/AutoWire
 6) Collections at WK5/D5/Spring/Collection Injection
 
-*Rest*
+**Rest**
 1) Project with separate GET,POST and PUT methods can be found at WK5/D5/Spring/Rest
 2) Project with integerated GET,POST and PUT methods can be found at WK5/D6/Spring Boot/get
 3) Separate POST method can be found at WK5/D6/Spring Boot/post
