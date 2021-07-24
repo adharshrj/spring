@@ -1,0 +1,52 @@
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  
+   <bean id = "Collection" class = "com.spring.collections.Collection">
+      
+
+      <property name = "l1">
+         <list>
+            <value>A</value>
+            <value>B</value>
+            <value>C</value>
+            <value>D</value>
+         </list>
+      </property>
+
+      
+      <property name = "s1">
+         <set>
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>4</value>
+         </set>
+      </property>
+
+
+      <property name = "m1">
+         <map>
+            <entry key = "1" value = "A"/>
+            <entry key = "2" value = "B"/>
+            <entry key = "3" value = "C"/>
+            <entry key = "4" value = "D"/>
+         </map>
+      </property>
+      
+    
+      <property name = "addressp1">
+         <props>
+            <prop key = "one">A</prop>
+            <prop key = "one">A</prop>
+            <prop key = "two">B</prop>
+            <prop key = "three">C</prop>
+            <prop key = "four">D</prop>
+         </props>
+      </property>
+   </bean>
+
+</beans>

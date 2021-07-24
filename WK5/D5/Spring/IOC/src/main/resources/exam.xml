@@ -1,25 +1,28 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
+    default-init-method = "init"
+    default-destroy-method = "destroy">
+	
 
-
-	<bean id="ex1" class="com.spring.IOC.Exam" scope="singleton" autowire="byName">
+	<bean id="ex1" class="com.spring.IOC.Exam" scope="singleton" autowire="byName" init-method = "init" destroy-method = "destroy">
+	<property name="message" value = "Hello!!!"/>
 	<property name="eid" value="001"/>
 	<property name="eName" value="English"/>
 	</bean>
 	
-	<bean id="ex2" class="com.spring.IOC.Exam" scope="singleton" autowire="byName">
+	<bean id="ex2" class="com.spring.IOC.Exam" scope="singleton" autowire="byName" init-method = "init" destroy-method = "destroy">
 	<property name="eid" value="002"/>
 	<property name="eName" value="Maths"/>
 	</bean>
 	
-	<bean id="ex3" class="com.spring.IOC.Exam" scope="singleton" autowire="byName">
+	<bean id="ex3" class="com.spring.IOC.Exam" scope="singleton" autowire="byName" init-method = "init" destroy-method = "destroy">
 	<property name="eid" value="003"/>
 	<property name="eName" value="Computer Science"/>
 	</bean>
 	
-	<bean id="ex4" class="com.spring.IOC.Exam" scope="singleton" autowire="byName">
+	<bean id="ex4" class="com.spring.IOC.Exam" scope="singleton" autowire="byName" init-method = "init" destroy-method = "destroy">
 	<property name="eid" value="004"/>
 	<property name="eName" value="Physics"/>
 	</bean>
