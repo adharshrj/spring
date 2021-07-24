@@ -7,7 +7,7 @@ Maven Projects can be found at WK5/D1/parentapp (original location srmb2corejava
 2) String & Date (ChildProj1 is String, ChildProj2 is date)
 3) Web module with document.getElementById functions 
 
-*Spring Core*
+*Spring Core*<br>
 Spring Core projects can be found at WK5/D5/Spring
 1) IOC at WK5/D5/Spring/IOC
 2) DI at WK5/D5/Spring/DI
