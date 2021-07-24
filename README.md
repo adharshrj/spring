@@ -1,7 +1,7 @@
 # srmb2spring
  Spring Apps
 
-*Maven*
+*Maven*<br>
 Maven Projects can be found at WK5/D1/parentapp (original location srmb2corejava/WK5/D1/parentapp)
 1) Parent Child
 2) String & Date (ChildProj1 is String, ChildProj2 is date)
