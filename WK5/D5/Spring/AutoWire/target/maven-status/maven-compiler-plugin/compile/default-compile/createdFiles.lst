@@ -1,0 +1,9 @@
+com\spring\autowire\Constructor\Department.class
+com\spring\autowire\ByName\Department.class
+com\spring\autowire\ByType\Department.class
+com\spring\autowire\ByName\Employee.class
+com\spring\autowire\ByName\ByName.class
+com\spring\autowire\ByType\ByType.class
+com\spring\autowire\Constructor\Constructor.class
+com\spring\autowire\Constructor\Employee.class
+com\spring\autowire\ByType\Employee.class

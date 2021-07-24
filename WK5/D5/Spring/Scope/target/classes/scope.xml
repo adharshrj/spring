@@ -5,7 +5,7 @@
     default-init-method = "init"
     default-destroy-method = "destroy">
  
- <bean id="scope" class="com.spring.scope.Scope" scope="prototype" autowire="byName" init-method = "init" destroy-method = "destroy"/>
+ <bean id="scope" class="com.spring.IOC.Scope" scope="prototype"/>
  
  </beans>
  
