@@ -16,5 +16,5 @@ Spring Core projects can be found at WK5/D5/Spring
 5) Collections at WK5/D5/Spring/Collection Injection
 
 *Rest*
-Project with separate GET,POST and PUT methods can be found at WK5/D5/Spring/Rest
-Project with integerated GET,POST and PUT methods can be found at WK5/D6/Spring Boot/get
+1) Project with separate GET,POST and PUT methods can be found at WK5/D5/Spring/Rest
+2) Project with integerated GET,POST and PUT methods can be found at WK5/D6/Spring Boot/get
