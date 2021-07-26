@@ -2,12 +2,23 @@ package com.spring.restapi.model;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import org.springframework.boot.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import javax.validation.*;
+import javax.validation.constraints.*;
+
+
 
 public class Customer {
+	
+	
 	private int id;
+	
+	@NotEmpty(message = "Please provide a name")
 	private String name;
+	
+	@NotNull(message = "Please provide a salary")
+    @DecimalMin("1.00")
 	private long salary;
 	
 	@JsonFormat(pattern="yyyy-MM-dd")

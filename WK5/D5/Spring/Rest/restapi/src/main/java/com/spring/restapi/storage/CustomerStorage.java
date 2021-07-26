@@ -15,7 +15,7 @@ import com.spring.restapi.model.Customer;
 @Component("customerStorage")
 public class CustomerStorage {
 	
-	private Map _customers = new HashMap();
+	private Map<Integer,Customer> _customers = new HashMap();
 	
     @PostConstruct
     public void init() throws Exception {

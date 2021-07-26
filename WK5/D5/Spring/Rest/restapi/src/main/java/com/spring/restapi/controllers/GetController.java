@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.*; 
 import com.spring.restapi.model.Customer;
 import com.spring.restapi.storage.CustomerStorage;
+import com.spring.restapi.error.*;
 
 @RestController
-@RequestMapping("/api/get")
+@RequestMapping("/api")
 public class GetController {
 
 	@Autowired
@@ -19,7 +20,8 @@ public class GetController {
 	
 	@GetMapping("/string")
 	public String getString() {
-		return "REST API";
+		return "REST API"
+		.orElseThrow(() -> new NotFoundException(id));
 	}
 	
 	@GetMapping("/customer/{id}")

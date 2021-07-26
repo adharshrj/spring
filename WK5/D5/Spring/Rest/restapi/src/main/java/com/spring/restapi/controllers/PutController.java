@@ -1,5 +1,5 @@
 package com.spring.restapi.controllers;
-
+import org.springframework.boot.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.*; 
 import com.spring.restapi.model.Customer;
 import com.spring.restapi.storage.CustomerStorage;
+import com.spring.restapi.error.*;
+
 
 @RestController
-@RequestMapping("/api/put")
+@RequestMapping("/api")
 public class PutController {
 
 	@Autowired
