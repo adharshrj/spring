@@ -1,7 +1,7 @@
 package com.spring.restapi.error;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
-public class CustomErrorResponse {
+public class ErrorCust extends RuntimeException{
 
 	String errorCode;
 	String errorMsg;
@@ -9,7 +9,7 @@ public class CustomErrorResponse {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss")
 	LocalDateTime timestamp;
 	
-	public CustomErrorResponse(String errorCode, String errorMsg) {
+	public ErrorCust(String errorCode, String errorMsg) {
 		super();
 		this.errorCode = errorCode;
 		this.errorMsg = errorMsg;
