@@ -21,3 +21,16 @@ Spring Core projects can be found at WK5/D5/Spring
 1) Project with separate GET,POST and PUT methods can be found at WK5/D5/Spring/Rest
 2) Project with integerated GET,POST and PUT methods can be found at WK5/D6/Spring Boot/get
 3) Separate POST method can be found at WK5/D6/Spring Boot/post
+
+## Week 5
+**Spring Boot**
+1)DELETE Mapping at WK6/D1,2,3/restapi2
+2)Validation at WK6/D1,2,3/restapi2
+3)Global Error Handling at WK6/D1,2,3/restapi2
+4)One to One mapping at WK6/onetoonemapping
+5)One to Many mapping at WK6/onetomanymapping
+6)Many to Many maping at WK6/manytomanymapping
+7)Composite Keys at WK6/compositekey/compositekey
+8)Custom joins at WK6/customjoins
+9)Spring Security at WK6/security
+
