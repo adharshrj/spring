@@ -1,0 +1,7 @@
+com\knf\dev\repository\BookRepository.class
+com\knf\dev\model\Book.class
+com\knf\dev\Application.class
+com\knf\dev\controller\HomeController.class
+com\knf\dev\model\Author.class
+com\knf\dev\dto\AuthorDto.class
+com\knf\dev\dto\BookDto.class

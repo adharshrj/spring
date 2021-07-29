@@ -17,7 +17,7 @@ public class Phone {
     private int id;
 
     @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    private Employee emp;
+    private Customer cust;
 
     private String pNumber;
 
@@ -37,12 +37,12 @@ public class Phone {
         this.id = id;
     }
 
-    public Employee getEmp() {
-        return emp;
+    public Customer getCust() {
+        return cust;
     }
 
-    public void setEmp(Employee emp) {
-        this.emp = emp;
+    public void setCust(Customer cust) {
+        this.cust = cust;
     }
     
 }

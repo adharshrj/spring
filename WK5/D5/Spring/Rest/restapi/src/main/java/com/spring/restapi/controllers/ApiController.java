@@ -30,7 +30,7 @@ public class ApiController extends BaseController{
     private CustomerService service;
 
     @Autowired
-    private StudentService stuService;
+    private PhoneService pservice;
 
     @Autowired
     private Configr config;
@@ -75,6 +75,13 @@ public class ApiController extends BaseController{
         service.persitCustomer(cust);
         return new ResponseEntity<List<Customer>>(service.fetchAllCustomer(),HttpStatus.OK);
     }
+    
+    @PostMapping(value = "/phone/post",produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Phone>> updatePhone(@RequestBody Phone pe){
+        System.out.println(pe);
+        pservice.persitPhone(pe);
+        return new ResponseEntity<List<Phone>>(pservice.fetchAllPhone(),HttpStatus.OK);
+    }
 
 
     @GetMapping(value = "/names", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -94,22 +101,6 @@ public class ApiController extends BaseController{
     public ResponseEntity<List<String>> getNamesById(@PathVariable int id) throws Exception {
         System.out.println(id);
         return new ResponseEntity<List<String>>(service.getNames(), HttpStatus.OK);
-    }
-
-
-    @PostMapping(value = "/student",produces = MediaType.APPLICATION_JSON_VALUE)    
-    public ResponseEntity<List<Student>> saveStudent(@RequestBody Student stuReq){
-        stuService.save(stuReq);
-
-        //CreateStudentResponse stuRes = new CreateStudentResponse();
-
-        System.out.println("====" + stuReq.getId());
-
-        //Integer id = stuService.fetchById(stuReq.getStu().getId());
-
-        //stuRes.setStudentId(stuService.fetchById(stuReq.getStu().getId()).get());
-
-        return new ResponseEntity<List<Student>>(stuService.fetchAll(),HttpStatus.OK);
     }
 
 }

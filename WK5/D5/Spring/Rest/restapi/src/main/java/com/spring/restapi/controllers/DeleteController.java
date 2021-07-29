@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.*; 
 import com.spring.restapi.model.Customer;
 import com.spring.restapi.storage.CustomerStorage;
-import com.spring.restapi.error.*;
+import com.spring.restapi.error.ErrorCust;
 
 @RestController
 @RequestMapping("/api")
