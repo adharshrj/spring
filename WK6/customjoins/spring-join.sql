@@ -24,9 +24,15 @@ CREATE TABLE IF NOT EXISTS `employee` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `employee` (`id`, `name`, `email`, `address`, `dept_id`) VALUES
-	(1, 'Adharsh', 'adharsh@gmail.com', NULL, 3),
-	(2, 'Ajith', 'ajith@gmail.com', NULL, 2),
-	(3, 'Tony', 'tony@gmail.com', NULL, 1);
+	(1, 'Adharsh', 'adharsh@gmail.com', null, 3),
+	(2, 'Ajith', 'ajith@gmail.com', null, 2),
+	(3, 'Tony', 'tony@gmail.com', null, 1);
 
 INSERT INTO `employee` (`id`, `name`, `email`, `address`, `dept_id`) VALUES
-    (4, 'Dhoni', 'Dhoni@gmail.com', NULL, 4);
+    (4, 'Dhoni', 'Dhoni@gmail.com', null, 4);
+
+UPDATE `cj`.`employee` SET `address` = 'Chennai' WHERE (`id` = '1');
+UPDATE `cj`.`employee` SET `address` = 'Mumbai' WHERE (`id` = '2');
+UPDATE `cj`.`employee` SET `address` = 'California' WHERE (`id` = '3');
+UPDATE `cj`.`employee` SET `address` = 'Ranchi' WHERE (`id` = '4');
+    
