@@ -24,14 +24,14 @@ public class HomeController {
 	@Autowired
 	BookRepository bookRepository;
 
-	@GetMapping
+	@GetMapping("/all")
 	public List<BookDto> findAll() {
 
 		return bookMapper(bookRepository.findAll());
 
 	}
 
-	@PostMapping
+	@PostMapping("/add")
 	public Boolean save(@RequestBody Book book) {
 		try {
 			bookRepository.save(book);

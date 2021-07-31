@@ -20,14 +20,14 @@ public class HomeController {
 	@Autowired
 	EmployeeRepository employeeRepository;
 
-	@GetMapping
+	@GetMapping("/all")
 	public List<Employee> findAll() {
 
 		return employeeRepository.findAll();
 
 	}
 
-	@PostMapping
+	@PostMapping("add")
 	public Employee saveEmployee(@RequestBody Employee employee) {
 		return employeeRepository.save(employee);
 
