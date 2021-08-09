@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 import com.spring.restapi.error.*;
-//import com.spring.restapi.error.NotFoundException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
